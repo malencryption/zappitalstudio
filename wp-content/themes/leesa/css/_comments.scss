@@ -1,0 +1,21 @@
+ul.comment-list {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 35px;
+
+    > li > ul {
+        list-style: none;
+    }
+}
+.comment-body {
+    margin: 0 0 15px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.comment-form-comment {
+    margin: 10px 0;
+}
+textarea#comment {
+    width: 100%;
+    min-height: 100px;
+}

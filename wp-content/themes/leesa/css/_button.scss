@@ -1,0 +1,87 @@
+.btn-cont {
+    display: flex;
+    justify-content: center;
+}
+.btn-green {
+    background: linear-gradient(#75b1b2, #4f7e74);
+    color: #fff;
+    border-radius: 50px;
+    line-height: 40px;
+    padding: 0 15px;
+    border: 0;
+}
+.btn-green:hover {
+    background: linear-gradient(#4f7e74, #75b1b2);
+    color: #fff;
+}
+.btn,
+.btn-large,
+.btn-small {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: 0;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+        0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+        0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+.btn-teal {
+    background-color: teal;
+
+    &:hover {
+        background-color: #26a69a;
+    }
+}
+.readMoreLink {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        color: $green;
+        text-decoration: none;
+    }
+}
+
+.linkBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.linkBlock {
+    border: 1px solid #00c180;
+    color: #000;
+    text-transform: none;
+    padding: 0px 12px;
+    margin: 5px 5px;
+
+    &:hover {
+        text-decoration: none;
+        color: $green;
+    }
+}

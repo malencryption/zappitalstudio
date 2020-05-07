@@ -1,0 +1,90 @@
+body.logged-in.admin-bar {
+    #mainNav {
+        margin-top: 32px;
+    }
+    header {
+        top: 32px;
+    }
+}
+header {
+    position: sticky;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+@media screen and (max-width: 782px) {
+    body.logged-in.admin-bar #mainNav {
+        margin-top: 46px;
+    }
+}
+
+#topBar {
+    padding: 5px 0;
+    background: #000;
+}
+.topSM {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+
+    .title {
+        margin-right: 15px;
+    }
+}
+.socialMedia {
+    img {
+        height: 20px;
+    }
+}
+#main-nav.navbar {
+    padding: 15px 0;
+    background: white;
+
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+#main-nav {
+    .nav-item:not(:last-of-type) {
+        margin: 0 25px 0 0;
+    }
+    a.nav-link {
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0px;
+    }
+    a.nav-link:hover {
+        color: $green;
+    }
+}
+
+#topNavWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#topNav {
+    a {
+        color: lightgray;
+
+        &:hover {
+            color: white;
+        }
+    }
+    &.navbar {
+        padding: 0;
+        font-size: 0.8rem;
+    }
+    .nav-item:first-of-type {
+        margin: 0 15px 0 0;
+    }
+    .navbar-nav .nav-link {
+        padding: 0;
+    }
+}

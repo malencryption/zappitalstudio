@@ -1,0 +1,63 @@
+.postPreviewContainer {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .postPreview {
+        border: 1px solid gray;
+        padding: 15px;
+        width: calc(100% / 3 - 10px);
+
+        &:hover {
+            box-shadow: 0 0 7px grey;
+        }
+    }
+
+    .postTitle {
+        margin: 0 0 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .postFeatImg {
+        margin: 0 0 15px;
+        width: 100%;
+        height: 200px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .postDate {
+        font-size: 0.9em;
+        color: gray;
+        font-style: italic;
+        margin: 0 0 10px;
+    }
+
+    .postExcerpt {
+        font-size: 14px;
+
+        p {
+            margin: 0 0 7px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,38 @@
+.authorImage {
+    margin: 16px 0 15px;
+
+    img {
+        max-height: 180px;
+    }
+}
+.postsSidebar {
+    width: 300px;
+    margin: 0 0 40px;
+}
+
+.sidebarLayoutContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .sidebar {
+        width: 300px;
+        margin: 0 0 0 40px;
+        order: 2;
+    }
+    .sidecontent {
+        width: calc(100% - 340px);
+        order: 1;
+    }
+}
+.sidebar h3 {
+    margin: 15px 0;
+
+    &::after {
+        width: 100px;
+        height: 2px;
+        content: "";
+        display: block;
+        border-bottom: 2px solid #00c180;
+        margin: 10px 0;
+    }
+}

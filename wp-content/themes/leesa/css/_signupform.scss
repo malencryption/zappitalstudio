@@ -1,0 +1,32 @@
+.indicates-required {
+    font-size: 0.8em;
+    margin: 0 0 10px;
+}
+.asterisk {
+    color: #b71c1c;
+}
+.signupDescription {
+    margin: 0 0 10px;
+}
+#mc_embed_signup {
+    border: 2px solid #00c17f;
+    padding: 15px 10px 20px;
+    margin: 15px 0;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+    h2 {
+        margin: 0 0 15px;
+    }
+    &:hover {
+        -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+            0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+            0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    }
+}
+.signupImage {
+    margin: -15px -10px 10px;
+}
