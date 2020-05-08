@@ -8,46 +8,39 @@ get_header(); ?>
 <div class="fw-page">
 	<div class="fw-image">
 		<div class="sectionTitle">
-			<h2>Blog</h2>
+			<?php 
+				if (is_search()) {
+					echo '<h2>Search Results for "<em>';
+					echo the_search_query();
+					echo '</em>"</h2>';
+				} else {
+					echo '<h2>All Blog Posts</h2>';
+				}
+			?>
 		</div>
 	</div>
 	<div class="container">
-		<div class="postsCol">
-			<?php
-				if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
-		
-					<div id="post-<?php the_ID(); ?>" class="postShort">
-						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<div class="date"><?php echo get_the_date(); ?></div>
-						<div class="post-thumbnail"><?php echo get_the_post_thumbnail( $post_id, 'thumbnail' ); ?></div>
-						<div class="post-excerpt"><?php the_excerpt(); ?></div>
-					</div>
-		
-				<?php endwhile;
-			endif;
-			?>
-		</div>
-		<div class="postsSidebar">
-			<h4>Categories</h4>
-			<div class="catBlocks">
-			<?php
-				$categories = get_categories( array(
-					'orderby' => 'name',
-					'order'   => 'ASC'
-				) );
- 
-				foreach( $categories as $category ) {
-					$category_link = sprintf( 
-						'<a href="%1$s" alt="%2$s">%3$s</a>',
-						esc_url( get_category_link( $category->term_id ) ),
-						esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
-						esc_html( $category->name )
-					);
-					
-					echo '<div class="catLinkBlock">' . $category_link . '</div>';
-				} 
-			?>
+		<div class="sidebarLayoutContainer">
+			<div class="sidecontent">
+				<div class="postPreviewContainer">
+				<?php
+						if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
+				
+							<div class="postPreview">
+								<a href="<?php the_permalink() ?>">
+									<div class="postFeatImg"><?php the_post_thumbnail('medium') ?></div>
+									<div class="postTitle"><?php the_title();?></div>
+									<div class="postDate"><?php echo get_the_date() ?></div>
+									<div class="postExcerpt"><?php the_excerpt();?></div>
+								</a>
+							</div>
+				
+						<?php endwhile;
+					endif;
+					?>
+				</div>
 			</div>
+			<?php get_sidebar() ?>
 		</div>
  	</div>
 </div>

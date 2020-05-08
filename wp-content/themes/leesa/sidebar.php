@@ -1,4 +1,7 @@
 <div class="sidebar">
+    <?php 
+        if (!is_page('about-us')) {
+    ?>
     <h2>About the Author</h2>
 
     <div class="authorImage"><img src="http://zappitalstudio.com/wp-content/uploads/2020/03/leesa-ruzicka-profile-picture.png" alt="" class="size-medium wp-image-2048 alignnone mr-4"></div>
@@ -6,6 +9,8 @@
     <p>Leesa graduated with both a Bachelor’s Degree in Web Design and Development and a cosmetology license. Her experience in business operations as well as web and software development, digital marketing, and graphic design comes from managing salons, running independant businesses doing contract and freelance work, teaching as a bootcamp instructor, developing independant projects, and over five years of professional experience as a software and web developer.</p>
     
     <div><a class="readMoreLink" href="/about-us">Read More >></a></div>
+
+    <?php } ?>
 
     <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup">
@@ -38,7 +43,7 @@
     <?php get_search_form() ?>
 
     <div class="sidebarCategories">
-        <h3>Categories</h3>
+        <h3 class="bordered">Categories</h3>
         <div class="linkBlocks">
         <?php
             $exclude = get_category_by_slug('uncategorized');
@@ -62,7 +67,7 @@
         </div>
     </div>
     <div class="sidebarTags">
-        <h3>Tags</h3>
+        <h3 class="bordered">Tags</h3>
         <div class="linkBlocks">
             <?php
             $tags = get_tags();

@@ -16,7 +16,7 @@
 
     .sidebar {
         width: 300px;
-        margin: 0 0 0 40px;
+        margin: 38px 0 0 40px;
         order: 2;
     }
     .sidecontent {
@@ -24,15 +24,12 @@
         order: 1;
     }
 }
-.sidebar h3 {
-    margin: 15px 0;
-
-    &::after {
-        width: 100px;
-        height: 2px;
-        content: "";
-        display: block;
-        border-bottom: 2px solid #00c180;
-        margin: 10px 0;
+.home,
+.search,
+.page,
+.blog,
+.tag {
+    .sidebar h2 {
+        margin-top: 0;
     }
 }

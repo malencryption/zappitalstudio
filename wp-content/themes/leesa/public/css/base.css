@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -34,6 +35,10 @@ h3 a,
 h4 a,
 h5 a {
   color: #000;
+}
+
+a {
+  color: #00c180;
 }
 
 .right {
@@ -112,7 +117,7 @@ h4 {
 }
 
 .entry {
-  width: calc(33.33% - 15px);
+  width: calc(100% / 2 - 15px);
   display: flex;
 }
 
@@ -221,7 +226,7 @@ span.greenText {
   height: auto;
   min-height: 100px;
   background-position: top;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .sectionTitle h2 {
@@ -249,12 +254,6 @@ span.greenText {
   padding-bottom: 15px;
 }
 
-.date {
-  font-style: italic;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-
 #mailmunch-optin-form {
   border: 0 !important;
   max-width: 500px;
@@ -278,6 +277,41 @@ span.greenText {
 
 .serviceBtn {
   margin-top: 25px;
+}
+
+h3.bordered {
+  margin: 15px 0;
+}
+
+h3.bordered::after {
+  width: 100px;
+  height: 2px;
+  content: "";
+  display: block;
+  border-bottom: 2px solid #00c180;
+  margin: 10px 0;
+}
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+}
+
+.breadcrumb .separator {
+  margin: 0 2px 0 1px;
+}
+
+.jumpto::before {
+  display: block;
+  content: " ";
+  margin-top: -155px;
+  height: 155px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.page .page-content {
+  margin-top: 42px;
 }
 
 @media (max-width: 1199px) {
@@ -425,6 +459,114 @@ span.greenText {
   }
 }
 
+.postPreviewContainer {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.postPreviewContainer .postPreview {
+  border: 1px solid gray;
+  padding: 15px;
+  width: calc(100% / 2 - 10px);
+  margin: 0 0 15px;
+}
+
+.postPreviewContainer .postPreview:hover {
+  box-shadow: 0 0 7px grey;
+}
+
+.postPreviewContainer .postTitle {
+  margin: 0 0 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.postPreviewContainer .postFeatImg {
+  margin: 0 0 15px;
+  width: 100%;
+  height: 200px;
+}
+
+.postPreviewContainer .postFeatImg img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.postPreviewContainer .postDate {
+  font-size: 0.9em;
+  color: gray;
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
+.postPreviewContainer .postExcerpt {
+  font-size: 14px;
+}
+
+.postPreviewContainer .postExcerpt p {
+  margin: 0 0 7px;
+}
+
+.postPreviewContainer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.postPreviewContainer a:hover {
+  color: #000;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.single-post .sidebar > h2:first-child {
+  margin: 0;
+}
+
+.postTags,
+.postCats {
+  border-top: 1px solid #00c180;
+  border-bottom: 1px solid #00c180;
+  padding: 10px 0;
+  margin: 15px 0;
+  font-size: 0.8rem;
+  color: #495057;
+}
+
+.related-posts {
+  margin: 30px 0 0;
+}
+
+.related-posts .postPreviewContainer {
+  margin: 20px 0 40px;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 15px 0 35px;
+}
+
+.post-meta .separator {
+  margin: 0 5px;
+}
+
+.single .post-thumbnail {
+  height: 400px;
+}
+
+.single .post-thumbnail img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .btn-cont {
   display: flex;
   justify-content: center;
@@ -505,6 +647,7 @@ span.greenText {
   text-transform: none;
   padding: 0px 12px;
   margin: 5px 5px;
+  font-size: 0.8rem;
 }
 
 .linkBlock:hover {
@@ -636,7 +779,7 @@ header {
 
 .sidebarLayoutContainer .sidebar {
   width: 300px;
-  margin: 0 0 0 40px;
+  margin: 38px 0 0 40px;
   order: 2;
 }
 
@@ -645,17 +788,12 @@ header {
   order: 1;
 }
 
-.sidebar h3 {
-  margin: 15px 0;
-}
-
-.sidebar h3::after {
-  width: 100px;
-  height: 2px;
-  content: "";
-  display: block;
-  border-bottom: 2px solid #00c180;
-  margin: 10px 0;
+.home .sidebar h2,
+.search .sidebar h2,
+.page .sidebar h2,
+.blog .sidebar h2,
+.tag .sidebar h2 {
+  margin-top: 0;
 }
 
 .indicates-required {
@@ -779,6 +917,7 @@ ul.comment-list > li > ul {
   margin: 0 0 15px;
   border: 1px solid gray;
   padding: 10px;
+  display: flex;
 }
 
 .comment-form-comment {
@@ -788,6 +927,32 @@ ul.comment-list > li > ul {
 textarea#comment {
   width: 100%;
   min-height: 100px;
+}
+
+.comment-author-avatar {
+  margin: 0 15px 0 0;
+}
+
+cite.comment-author {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: block;
+  font-size: 1rem;
+  color: black;
+}
+
+.comment-meta {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.comment-text {
+  margin: 10px 0;
+}
+
+.comment-text p {
+  margin: 0 0 10px;
 }
 
 /*# sourceMappingURL=base.css.map */

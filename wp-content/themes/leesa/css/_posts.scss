@@ -7,7 +7,8 @@
     .postPreview {
         border: 1px solid gray;
         padding: 15px;
-        width: calc(100% / 3 - 10px);
+        width: calc(100% / 2 - 10px);
+        margin: 0 0 15px;
 
         &:hover {
             box-shadow: 0 0 7px grey;
@@ -60,4 +61,41 @@
 .post-thumbnail img {
     width: 100%;
     height: auto;
+}
+.single-post .sidebar > h2:first-child {
+    margin: 0;
+}
+.postTags,
+.postCats {
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+    padding: 10px 0;
+    margin: 15px 0;
+    font-size: 0.8rem;
+    color: #495057;
+}
+.related-posts {
+    margin: 30px 0 0;
+
+    .postPreviewContainer {
+        margin: 20px 0 40px;
+    }
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 15px 0 35px;
+
+    .separator {
+        margin: 0 5px;
+    }
+}
+.single .post-thumbnail {
+    height: 400px;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
 }

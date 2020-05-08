@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="comments-area jumpto">
 
 	<?php
 	// You can start editing here -- including this comment!
@@ -51,6 +51,7 @@ if ( post_password_required() ) {
 				wp_list_comments( array(
 					'style'      => 'ul',
 					'short_ping' => true,
+					'callback' => 'better_comments'
 				) );
 			?>
 		</ul><!-- .comment-list -->
@@ -70,6 +71,7 @@ if ( post_password_required() ) {
 		'title_reply' => __( 'Write a Reply or Comment', 'textdomain' ),
 		'comment_notes_after' => '',
 		'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment:', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
+		'submit_button' => '<input name="%1$s" type="submit" id="%2$s" class="%3$s btn btn-teal" value="%4$s" />'
 	);
 	comment_form( $comments_args );
 	

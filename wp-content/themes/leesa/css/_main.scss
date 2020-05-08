@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -8,19 +9,6 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
-// body,
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// p {
-//     margin: 0;
-//     padding: 0;
-//     font-weight: normal;
-// }
 
 img {
     max-width: 100%;
@@ -32,6 +20,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
 }
+
 h1,
 h2,
 h3,
@@ -42,6 +31,10 @@ h5 {
     a {
         color: #000;
     }
+}
+
+a {
+    color: $green;
 }
 
 .right {
@@ -109,7 +102,7 @@ h4 {
     justify-content: space-between;
 }
 .entry {
-    width: calc(33.33% - 15px);
+    width: calc(100% / 2 - 15px);
     display: flex;
 
     .text {
@@ -213,7 +206,7 @@ span.greenText {
     height: auto;
     min-height: 100px;
     background-position: top;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .sectionTitle h2 {
@@ -240,11 +233,7 @@ span.greenText {
     margin-bottom: 40px;
     padding-bottom: 15px;
 }
-.date {
-    font-style: italic;
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
+
 #mailmunch-optin-form {
     border: 0 !important;
     max-width: 500px;
@@ -268,6 +257,40 @@ span.greenText {
 
 .serviceBtn {
     margin-top: 25px;
+}
+
+h3.bordered {
+    margin: 15px 0;
+
+    &::after {
+        width: 100px;
+        height: 2px;
+        content: "";
+        display: block;
+        border-bottom: 2px solid #00c180;
+        margin: 10px 0;
+    }
+}
+
+.breadcrumb {
+    background: none;
+    padding: 0;
+
+    .separator {
+        margin: 0 2px 0 1px;
+    }
+}
+.jumpto::before {
+    display: block;
+    content: " ";
+    margin-top: -155px;
+    height: 155px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.page .page-content {
+    margin-top: 42px;
 }
 
 @media (max-width: 1199px) {

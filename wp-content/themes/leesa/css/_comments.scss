@@ -11,6 +11,7 @@ ul.comment-list {
     margin: 0 0 15px;
     border: 1px solid gray;
     padding: 10px;
+    display: flex;
 }
 .comment-form-comment {
     margin: 10px 0;
@@ -18,4 +19,26 @@ ul.comment-list {
 textarea#comment {
     width: 100%;
     min-height: 100px;
+}
+.comment-author-avatar {
+    margin: 0 15px 0 0;
+}
+cite.comment-author {
+    font-style: normal;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: block;
+    font-size: 1rem;
+    color: black;
+}
+.comment-meta {
+    font-size: 0.8rem;
+    color: gray;
+}
+.comment-text {
+    margin: 10px 0;
+
+    p {
+        margin: 0 0 10px;
+    }
 }
