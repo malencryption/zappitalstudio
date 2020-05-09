@@ -24,6 +24,7 @@ header {
 #topBar {
     padding: 5px 0;
     background: #000;
+    display: none;
 }
 .topSM {
     display: flex;
@@ -40,28 +41,38 @@ header {
         height: 20px;
     }
 }
-#main-nav.navbar {
-    padding: 15px 0;
-    background: white;
-
-    .logo img {
-        width: 100px;
-        height: auto;
-    }
-}
 
 #main-nav {
-    .nav-item:not(:last-of-type) {
-        margin: 0 25px 0 0;
+    &.navbar {
+        padding: 15px 15px;
+        background: white;
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
     }
     a.nav-link {
         color: #000;
         font-weight: bold;
         text-transform: uppercase;
         padding: 0px;
+        padding: 8px 10px;
+        display: inline-block;
+
+        &:hover {
+            color: $green;
+        }
     }
-    a.nav-link:hover {
-        color: $green;
+    .navbar-nav {
+        margin-top: 15px;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .nav-item {
+        width: 100%;
     }
 }
 
@@ -87,4 +98,7 @@ header {
     .navbar-nav .nav-link {
         padding: 0;
     }
+}
+.navbar-toggler {
+    padding: 5px 7px;
 }

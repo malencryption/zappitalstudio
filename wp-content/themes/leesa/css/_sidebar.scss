@@ -12,15 +12,16 @@
 
 .sidebarLayoutContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     .sidebar {
-        width: 300px;
+        width: 100%;
         margin: 38px 0 0 40px;
         order: 2;
     }
     .sidecontent {
-        width: calc(100% - 340px);
+        width: 100%;
         order: 1;
     }
 }
@@ -31,5 +32,18 @@
 .tag {
     .sidebar h2 {
         margin-top: 0;
+    }
+}
+@media (min-width: 768px) {
+    .sidebarLayoutContainer {
+        .sidebar {
+            width: 300px;
+            margin: 38px 0 0 40px;
+            order: 2;
+        }
+        .sidecontent {
+            width: calc(100% - 340px);
+            order: 1;
+        }
     }
 }
