@@ -22,24 +22,33 @@ get_header(); ?>
 	<div class="container">
 		<div class="sidebarLayoutContainer">
 			<div class="sidecontent">
-				<div class="postPreviewContainer">
 				<?php
-						if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
+					if ( have_posts() ) { ?>
+						<div class="postPreviewContainer">
+							<?php while ( have_posts() ): the_post(); ?>
+
+								<div class="postPreview">
+									<a href="<?php the_permalink() ?>">
+										<div class="postFeatImg"><?php the_post_thumbnail('medium') ?></div>
+										<div class="postTitle"><?php the_title();?></div>
+										<div class="postDate"><?php echo get_the_date() ?></div>
+										<div class="postExcerpt"><?php the_excerpt();?></div>
+									</a>
+								</div>
 				
-							<div class="postPreview">
-								<a href="<?php the_permalink() ?>">
-									<div class="postFeatImg"><?php the_post_thumbnail('medium') ?></div>
-									<div class="postTitle"><?php the_title();?></div>
-									<div class="postDate"><?php echo get_the_date() ?></div>
-									<div class="postExcerpt"><?php the_excerpt();?></div>
-								</a>
-							</div>
-				
-						<?php endwhile;
-					endif;
+							<?php endwhile; ?>
+						</div>
+					<?php } else {
+						if (is_search()) {
+							echo '<h3>No Results Found for "<em>';
+							echo the_search_query();
+							echo '</em>"</h3>';
+
+							get_template_part( 'template-parts/featuredPostsByCategory' );
+						}
+					}
 					?>
 				</div>
-			</div>
 			<?php get_sidebar() ?>
 		</div>
  	</div>

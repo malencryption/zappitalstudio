@@ -17,7 +17,7 @@
 
     .sidebar {
         width: 100%;
-        margin: 38px 0 0 40px;
+        margin: 0px 0 0 0px;
         order: 2;
     }
     .sidecontent {
@@ -34,16 +34,34 @@
         margin-top: 0;
     }
 }
+
+.home {
+    .sidebar {
+        margin-top: 38px;
+    }
+}
+
 @media (min-width: 768px) {
+    .sidebarLayoutContainer {
+        .sidebar {
+            width: 220px;
+            margin: 38px 0 0 20px;
+            order: 2;
+        }
+        .sidecontent {
+            width: calc(100% - 240px);
+            order: 1;
+        }
+    }
+}
+@media (min-width: 992px) {
     .sidebarLayoutContainer {
         .sidebar {
             width: 300px;
             margin: 38px 0 0 40px;
-            order: 2;
         }
         .sidecontent {
             width: calc(100% - 340px);
-            order: 1;
         }
     }
 }

@@ -4,17 +4,35 @@
     }
     .main-title h1,
     .subH1 {
-        max-width: 100%;
+        margin-left: 0;
     }
     .qLinks {
         ul {
             column-count: 2;
         }
     }
-    footer .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    footer {
+        padding: 50px 0 0;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    .main-title {
+        padding: 7% 15px 25px 45%;
+        text-align: left;
+    }
+    .postPreviewContainer {
+        margin: 40px -10px 0;
+
+        .postPreview {
+            width: 245px;
+        }
+    }
+    .home .postPreviewContainer {
+        margin: 40px -10px;
     }
 }
 @media (min-width: 768px) {
@@ -22,22 +40,12 @@
         margin-top: 40px;
         font-size: 1.8em;
     }
-    #topBar {
-        display: block;
+    h3 {
+        font-size: 1.5em;
     }
     #main-nav {
         &.navbar {
             padding: 15px 0px;
-        }
-        .nav-item {
-            width: auto;
-        }
-        .nav-item:not(:last-of-type) {
-            margin: 0 25px 0 0;
-            border: 0;
-        }
-        .navbar-nav {
-            text-align: right;
         }
     }
     .fw-image {
@@ -46,6 +54,7 @@
     .main-title {
         h1 {
             font-size: 1.75em;
+            line-height: 1em;
         }
     }
     .subH1 {
@@ -57,8 +66,34 @@
             column-count: 3;
         }
     }
+    .postPreviewContainer {
+        margin: 40px -5px;
+
+        .postPreview {
+            width: 220px;
+        }
+    }
+    .related-posts {
+        .postPreviewContainer {
+            margin: 20px 0 0px;
+        }
+    }
 }
 @media (min-width: 992px) {
+    #topBar {
+        display: block;
+    }
+    #main-nav {
+        .nav-item {
+            width: auto;
+        }
+        .nav-item:not(:last-of-type) {
+            margin: 0 5px 0 0;
+        }
+        .navbar-nav {
+            text-align: right;
+        }
+    }
     .main-title {
         padding: 7% 0 25px 45%;
 
@@ -78,6 +113,13 @@
         padding: 15px;
         margin: 0 0 15px;
     }
+    .postsCol {
+        width: calc(100% - 340px);
+        order: 1;
+    }
+    .postPreviewContainer {
+        margin: 40px 0px;
+    }
 }
 @media (min-width: 1200px) {
     .subH1 {
@@ -93,8 +135,6 @@
     }
 }
 
-@media (max-width: 1199px) {
-}
 @media (max-width: 991px) {
     .entry {
         width: calc(50% - 15px);
@@ -113,13 +153,6 @@
     }
 }
 @media (max-width: 767px) {
-    body {
-        font-size: 14px;
-    }
-    h3 {
-        font-size: 1.25em;
-        line-height: 20px;
-    }
     .entry .text {
         min-height: unset;
     }
@@ -128,18 +161,6 @@
         height: 40px;
         font-size: 20px;
         line-height: 40px;
-    }
-    #leverage {
-        background: #bbc3db2b;
-        background-image: linear-gradient(
-                to bottom,
-                transparent 1%,
-                #e9ecef 60%
-            ),
-            url(/wp-content/themes/leesa/images/pen-plants.jpg);
-        background-size: cover;
-        background-position: top;
-        padding: 10px 0 20px;
     }
 }
 @media (max-width: 525px) {
@@ -155,32 +176,5 @@
     }
     #services .body {
         justify-content: center;
-    }
-    #leverage {
-        background: #bbc3db2b;
-        background-image: linear-gradient(
-                to bottom,
-                transparent 1%,
-                #e9ecef 60%
-            ),
-            url(/wp-content/themes/leesa/images/pen-plants.jpg);
-        background-size: cover;
-        background-position: top;
-        padding: 10px 0 20px;
-    }
-    #leverage .body {
-        padding: 0 0px;
-    }
-    footer {
-        padding: 20px 0 0;
-    }
-    .main-title {
-        padding: 7% 0 25px 45%;
-    }
-}
-@media (min-width: 992px) {
-    .postsCol {
-        width: calc(100% - 340px);
-        order: 1;
     }
 }

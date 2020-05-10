@@ -57,8 +57,7 @@ a {
     h1 {
         font-size: 19px;
         line-height: 20px;
-        max-width: 180px;
-        margin-left: auto;
+        margin-left: 100px;
     }
 }
 .subH1 {
@@ -66,8 +65,7 @@ a {
     line-height: 16px;
     font-weight: bold;
     font-family: $fonts1;
-    max-width: 180px;
-    margin-left: auto;
+    margin-left: 100px;
 }
 
 h1 {
@@ -88,7 +86,8 @@ h2::after {
 }
 h3 {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    line-height: 20px;
 }
 h4 {
     font-size: 1em;
@@ -215,6 +214,7 @@ span.greenText {
     padding: 35px 0 25px;
     height: auto;
     min-height: 100px;
+    background: url("/wp-content/themes/leesa/images/multi-media-mobile.jpg");
     background-position: top;
     margin-bottom: 15px;
 }
@@ -301,4 +301,10 @@ h3.bordered {
 
 .page .page-content {
     margin-top: 42px;
+}
+.heirSep {
+    margin: 0 7px;
+}
+.navbar-nav i.white::before {
+    color: black;
 }

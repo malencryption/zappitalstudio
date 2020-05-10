@@ -104,17 +104,17 @@ function ci_get_related_posts( $post_id, $related_count, $args = array() ) {
 function get_breadcrumb() {
     echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
     if (is_category() || is_single()) {
-        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo "<span class='heirSep'>&#187;</span>";
         the_category('<span class="separator">,</span>', '');
             if (is_single()) {
-                echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+                echo "<span class='heirSep'>&#187;</span>";
                 the_title();
             }
     } elseif (is_page()) {
-        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo "<span class='heirSep'>&#187;</span>";
         echo the_title();
     } elseif (is_search()) {
-        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        echo "<span class='heirSep'>&#187;</span>Search Results for... ";
         echo '"<em>';
         echo the_search_query();
         echo '</em>"';

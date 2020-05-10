@@ -29,6 +29,10 @@ get_header(); ?>
 							</div>
 				
 						<?php endwhile;
+						the_posts_pagination( array(
+							'prev_text' => __( '&#187;' ),
+							'next_text' => __( '&#187;' ),
+						));
 					endif;
 					?>
 				</div>

@@ -38,7 +38,7 @@
 				</div>
 			</div>
 		</div>
-		<nav id="main-nav" class="navbar navbar-default navbar-expand-md navbar-light">
+		<nav id="main-nav" class="navbar navbar-default navbar-expand-lg navbar-light">
 			<div class="container">
 				<div class="logo"><a href="/"><img src="/wp-content/themes/leesa/images/zappital-studio-logo.png"></a></div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,14 @@
 							'list_item_class' => "nav-item",
 							'link_class' => "nav-link",
 						)); ?>
+						<?php wp_nav_menu(array(
+							'menu' => 'Top Menu',
+							'items_wrap'=>'%3$s',
+							'container' => false,
+							'list_item_class' => "nav-item d-lg-none",
+							'link_class' => "nav-link",
+						)); ?>
+						<li class="socialMedia d-lg-none nav-item"><?php get_template_part('social-media-menu') ?></li>
 					</ul>
 				</div>
 			</div>
