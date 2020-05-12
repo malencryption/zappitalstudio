@@ -30,7 +30,7 @@ get_header(); ?>
 				
 						<?php endwhile;
 						the_posts_pagination( array(
-							'prev_text' => __( '&#187;' ),
+							'prev_text' => __( '&laquo;' ),
 							'next_text' => __( '&#187;' ),
 						));
 					endif;

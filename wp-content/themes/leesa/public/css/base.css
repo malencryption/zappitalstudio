@@ -332,6 +332,49 @@ h3.bordered::after {
   color: black;
 }
 
+.screen-reader-text {
+  display: none;
+}
+
+.pagination {
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-links .page-numbers {
+  border: 1px solid #00c180;
+  min-width: 45px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  margin: 5px 5px 5px 0;
+  text-align: center;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-out;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-links .page-numbers:not(:first-child) {
+  margin: 5px;
+}
+
+.nav-links .page-numbers:hover {
+  background-color: #00c180;
+  color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links .page-numbers.current {
+  background-color: #00c180;
+  color: white;
+}
+
 .postPreviewContainer {
   margin: 40px 0 0;
   display: flex;
@@ -342,7 +385,8 @@ h3.bordered::after {
 .postPreviewContainer .postPreview {
   border: 1px solid gray;
   padding: 10px;
-  width: 290px;
+  width: 350px;
+  max-width: 100%;
   margin: 0 auto 15px;
 }
 
@@ -465,7 +509,8 @@ h3.bordered::after {
 
 .btn,
 .btn-large,
-.btn-small {
+.btn-small,
+div.wpforms-container-full .wpforms-form button[type="submit"].btn {
   text-decoration: none;
   color: #fff;
   text-align: center;
@@ -486,16 +531,19 @@ h3.bordered::after {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover {
+.btn:hover,
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
   color: #fff;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
 
-.btn-teal {
+.btn-teal,
+div.wpforms-container-full .wpforms-form button[type="submit"].btn-teal {
   background-color: teal;
 }
 
-.btn-teal:hover {
+.btn-teal:hover,
+div.wpforms-container-full .wpforms-form button[type="submit"].btn-teal:hover {
   background-color: #26a69a;
 }
 
@@ -668,6 +716,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .sidebarLayoutContainer .sidebar {
@@ -897,6 +946,9 @@ cite.comment-author {
   .postPreviewContainer .postPreview {
     width: 245px;
   }
+  .postPreviewContainer .postFeatImg {
+    height: 150px;
+  }
   .home .postPreviewContainer {
     margin: 40px -10px;
   }
@@ -975,6 +1027,9 @@ cite.comment-author {
   }
   .postPreviewContainer {
     margin: 40px 0px;
+  }
+  .postPreviewContainer .postFeatImg {
+    height: 200px;
   }
 }
 

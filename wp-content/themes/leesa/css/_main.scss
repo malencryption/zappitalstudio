@@ -308,3 +308,52 @@ h3.bordered {
 .navbar-nav i.white::before {
     color: black;
 }
+.screen-reader-text {
+    display: none;
+}
+
+.pagination {
+    width: 100%;
+    justify-content: center;
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-links .page-numbers {
+    border: 1px solid $green;
+    min-width: 45px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    margin: 5px 5px 5px 0;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+    &:not(:first-child) {
+        margin: 5px;
+    }
+
+    &:hover {
+        background-color: $green;
+        color: white;
+        -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+            0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+            0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    }
+
+    &.current {
+        background-color: $green;
+        color: white;
+    }
+}

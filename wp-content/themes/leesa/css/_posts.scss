@@ -7,7 +7,8 @@
     .postPreview {
         border: 1px solid gray;
         padding: 10px;
-        width: 290px;
+        width: 350px;
+        max-width: 100%;
         margin: 0 auto 15px;
 
         &:hover {

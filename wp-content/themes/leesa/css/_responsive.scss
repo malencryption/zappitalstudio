@@ -30,6 +30,9 @@
         .postPreview {
             width: 245px;
         }
+        .postFeatImg {
+            height: 150px;
+        }
     }
     .home .postPreviewContainer {
         margin: 40px -10px;
@@ -119,6 +122,10 @@
     }
     .postPreviewContainer {
         margin: 40px 0px;
+
+        .postFeatImg {
+            height: 200px;
+        }
     }
 }
 @media (min-width: 1200px) {

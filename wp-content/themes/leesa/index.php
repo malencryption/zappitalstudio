@@ -38,6 +38,10 @@ get_header(); ?>
 				
 							<?php endwhile; ?>
 						</div>
+						<?php the_posts_pagination( array(
+							'prev_text' => __( '&laquo;' ),
+							'next_text' => __( '&#187;' ),
+						)); ?>
 					<?php } else {
 						if (is_search()) {
 							echo '<h3>No Results Found for "<em>';
