@@ -1002,6 +1002,7 @@ cite.comment-author {
   }
   #main-nav .navbar-nav {
     text-align: right;
+    margin-top: 0;
   }
   .main-title {
     padding: 7% 0 25px 45%;
