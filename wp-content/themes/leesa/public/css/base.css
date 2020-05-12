@@ -681,14 +681,6 @@ header {
   order: 1;
 }
 
-.home .sidebar h2,
-.search .sidebar h2,
-.page .sidebar h2,
-.blog .sidebar h2,
-.tag .sidebar h2 {
-  margin-top: 0;
-}
-
 .home .sidebar {
   margin-top: 38px;
 }
@@ -702,6 +694,14 @@ header {
   .sidebarLayoutContainer .sidecontent {
     width: calc(100% - 240px);
     order: 1;
+  }
+  .home .sidebar h2,
+  .search .sidebar h2,
+  .page .sidebar h2,
+  .blog .sidebar h2,
+  .tag .sidebar h2,
+  .archive .sidebar h2 {
+    margin-top: 0;
   }
 }
 

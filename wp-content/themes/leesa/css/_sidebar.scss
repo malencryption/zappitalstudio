@@ -25,15 +25,6 @@
         order: 1;
     }
 }
-.home,
-.search,
-.page,
-.blog,
-.tag {
-    .sidebar h2 {
-        margin-top: 0;
-    }
-}
 
 .home {
     .sidebar {
@@ -51,6 +42,16 @@
         .sidecontent {
             width: calc(100% - 240px);
             order: 1;
+        }
+    }
+    .home,
+    .search,
+    .page,
+    .blog,
+    .tag,
+    .archive {
+        .sidebar h2 {
+            margin-top: 0;
         }
     }
 }

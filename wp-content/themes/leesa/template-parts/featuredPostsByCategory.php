@@ -40,6 +40,6 @@
             ?>
 
         </div>
-        <a class="btn btn-teal btnicon" href="/category/<?php echo $cat->slug?>">See All <?php echo $cat->name ?> Posts <i class="material-icons right">chevron_right</i></a>
+        <a class="btn btn-teal btnicon" href="/category/<?php echo $cat->slug?>"><?php echo $cat->name ?><i class="material-icons right">chevron_right</i></a>
     </div>
 <?php } ?>
