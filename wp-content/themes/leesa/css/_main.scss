@@ -87,7 +87,8 @@ h2::after {
 h3 {
     font-weight: bold;
     font-size: 1.25em;
-    line-height: 20px;
+    line-height: 24px;
+    margin: 25px 0;
 }
 h4 {
     font-size: 1em;
@@ -116,15 +117,19 @@ h4 {
         margin-left: 15px;
         width: calc(100% - 65px);
     }
+    h3 {
+        margin: 0 0 15px;
+    }
+
 }
 .greenBubble {
     width: 50px;
     height: 50px;
-    background: linear-gradient(#75b1b2, #4f7e74);
+    background: linear-gradient(#1de9b6, #00bfa5);
     border-radius: 50%;
-    border: 1px solid #639699;
+    border: 1px solid #00bfa5;
     font-size: 25px;
-    line-height: 49px;
+    line-height: 52px;
     text-align: center;
 }
 i.white {
@@ -136,6 +141,18 @@ i.white {
             color: $green;
         }
     }
+}
+
+i.material-icons.white {
+    color: white;
+}
+
+.greenBubble {
+      &:hover {
+        i.material-icons.white {
+            color: #00796b;
+        }
+    }  
 }
 
 #leverage {
