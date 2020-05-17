@@ -1,4 +1,8 @@
 <div class="sidebar">
+    <h2>Follow Us!</h2>
+    <div class="social-follows">
+        <?php get_template_part('social-media-menu') ?>
+    </div>
     <?php 
         if (!is_page('about-us')) {
     ?>

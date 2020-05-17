@@ -747,6 +747,33 @@ header {
   margin-top: 38px;
 }
 
+.social-follows {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.social-follows a {
+  background: #00c180;
+  border-radius: 12px;
+  padding: 7px 8px;
+  margin: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.social-follows a:hover {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.social-follows a i.white:hover::before {
+  color: #00ff8b;
+}
+
+.social-follows a i {
+  font-size: 45px;
+}
+
 @media (min-width: 768px) {
   .sidebarLayoutContainer .sidebar {
     width: 220px;
@@ -757,12 +784,12 @@ header {
     width: calc(100% - 240px);
     order: 1;
   }
-  .home .sidebar h2,
-  .search .sidebar h2,
-  .page .sidebar h2,
-  .blog .sidebar h2,
-  .tag .sidebar h2,
-  .archive .sidebar h2 {
+  .home .sidebar h2:first-child,
+  .search .sidebar h2:first-child,
+  .page .sidebar h2:first-child,
+  .blog .sidebar h2:first-child,
+  .tag .sidebar h2:first-child,
+  .archive .sidebar h2:first-child {
     margin-top: 0;
   }
 }
@@ -782,7 +809,7 @@ header {
   margin: 0 0 10px;
 }
 
-.asterisk {
+.asterisk, .required {
   color: #b71c1c;
 }
 
@@ -884,7 +911,7 @@ ul.comment-list {
   margin: 0 0 35px;
 }
 
-ul.comment-list > li > ul {
+ul.comment-list > li ul {
   list-style: none;
 }
 
@@ -928,6 +955,15 @@ cite.comment-author {
 
 .comment-text p {
   margin: 0 0 10px;
+}
+
+.form-cols {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-cols .form-group {
+  margin: 0 0 1rem 0;
 }
 
 .packages {
@@ -1211,6 +1247,9 @@ i.material-icons.red {
   }
   .postPreviewContainer .postFeatImg {
     height: 200px;
+  }
+  .form-cols .form-group {
+    margin: 0 15px 1rem 0;
   }
 }
 
