@@ -30,7 +30,21 @@
         <!-- <h3>Recent Posts</h3> -->
 
       </div>
-      <div class="copyright">© <?php echo date("Y"); ?> <span class="greenText">Zappital Studio</span> All Rights Reserved</div>
+      <div class="btm-bar">
+        <div class="copyright">© <?php echo date("Y"); ?> <span class="greenText">Zappital Studio</span> All Rights Reserved</div>
+        <nav id="btmNav" class="navbar">
+						<ul class="navbar-nav navbar-expand">
+							<?php wp_nav_menu(array(
+								'menu' => 'Bottom Menu',
+								'items_wrap'=>'%3$s',
+								'container' => false,
+								'list_item_class' => "nav-item",
+								'link_class' => "nav-link",
+							)); ?>
+						</ul>
+        </nav>
+      </div>
+
     </div><!-- /.container -->
   </footer><!-- /footer -->
 

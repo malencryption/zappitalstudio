@@ -184,13 +184,6 @@ i.material-icons.white {
   margin-left: 5px;
 }
 
-.copyright {
-  width: 100%;
-  padding: 15px 0;
-  border-top: 1px solid #f5f5f50f;
-  margin-top: 15px;
-}
-
 span.greenText {
   color: #00c180;
 }
@@ -616,6 +609,7 @@ body.logged-in.admin-bar header {
 header {
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
@@ -771,7 +765,7 @@ header {
 }
 
 .social-follows a i {
-  font-size: 45px;
+  font-size: 36px;
 }
 
 @media (min-width: 768px) {
@@ -903,6 +897,33 @@ footer .nav-link {
 
 footer .socialMedia {
   margin-top: 15px;
+}
+
+#btmNav.navbar {
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+#btmNav.navbar .nav-item:not(:first-of-type) {
+  margin: 0 0 0 15px;
+}
+
+#btmNav a {
+  color: lightgray;
+}
+
+#btmNav a:hover {
+  color: white;
+}
+
+.btm-bar {
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px solid #f5f5f50f;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 ul.comment-list {

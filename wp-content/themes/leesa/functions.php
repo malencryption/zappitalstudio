@@ -45,6 +45,7 @@ register_nav_menus( array(
     'top-menu' => 'Top Menu',
     'main-menu' => 'Main Menu',
     'footer-menu' => 'Footer Menu',
+    'bottom-menu' => 'Bottom Menu'
 ) );
 
 add_theme_support( 'post-thumbnails' );
