@@ -484,14 +484,14 @@ h3.bordered::after {
   margin: 0 5px;
 }
 
-.single .post-thumbnail {
-  height: 400px;
-}
-
 .single .post-thumbnail img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.wp-block-image img {
+  border: 3px solid #00c180;
 }
 
 .btn-cont {

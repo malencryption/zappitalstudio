@@ -38,8 +38,7 @@ if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
                                         publishing content
                                     </li>
                                     <li>
-                                        Video creators, vloggers, and live streamers (Twitch,
-                                        YouTube, Mixer)
+                                        Video creators, vloggers, and live streamers
                                     </li>
                                     <li>Businesses doing online lead generation</li>
                                     <li>Service providers</li>

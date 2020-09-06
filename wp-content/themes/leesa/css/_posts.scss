@@ -102,3 +102,6 @@
         object-fit: cover;
     }
 }
+.wp-block-image img {
+    border: 3px solid $green;
+}

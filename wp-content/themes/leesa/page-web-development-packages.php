@@ -26,7 +26,7 @@ if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
                 <div class="package-details">
                     <div class="lg-only">&nbsp;</div>
                     <div class="packageName">
-                        <h3>A. The Digital Business Card</h3>
+                        <h3>Package A.</h3>
 
                         <div class="desc">
                             <p>Expand Your Business Presence Online! For individuals and brands who are just breaking in to the online space, and those focused on content creation:</p>
@@ -44,7 +44,7 @@ if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
                         <a class="btn btn-teal" href="https://link.waveapps.com/5seqau-22znu6" target="_blank">Buy Now</a>
                     </div>
                     <div class="packageName">
-                        <h3>B. The Skillster Salester Showcase</h3>
+                        <h3>Package B.</h3>
 
                         <div class="desc">
                             <p>Broaden your Customer Base! Capture leads, grow your list, and upsell products and services. Ideal for showcasing skills and portfolios, such as:</p>
@@ -62,7 +62,7 @@ if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
                         <a class="btn btn-teal" href="https://link.waveapps.com/hzb3vq-7c87n4" target="_blank">Buy Now</a>
                     </div>
                     <div class="packageName">
-                        <h3>C. The Big Biz Brandster</h3>
+                        <h3>Package C.</h3>
 
                         <div class="desc">
                             <p>Fully Customize Your Brand! Unique Graphics and Site Design. Ideal for scaling a business with sales funnels, paid programs, and custom graphics, such as:</p>
@@ -198,7 +198,7 @@ if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
                 </div>
 
                 <div>
-                    <h2>Included in "The Skillster Salester Showcase":</h2>
+                    <h2>Included in Package B:</h2>
 
                     <p>With this package, you will get a newsletter optin form in addition to a landing page with email integration, so you can start growing your list and increase your client base. We will set you up with a free Mailchimp account or integrate with your current email service provider if you are already working with one.</p>
 
@@ -206,7 +206,7 @@ if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
                 </div>
 
                 <div>
-                    <h2>Included in "The Big Biz Brandster":</h2>
+                    <h2>Included in Package C:</h2>
 
                     <p>You will receive a custom logo design. Your site will be custom branded for your business.</p>
 

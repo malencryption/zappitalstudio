@@ -1,17 +1,17 @@
 {
-  "name": "leesa",
-  "version": "1.0.0",
-  "description": "for leesaruzicka.com",
-  "main": "index.js",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "laravel-elixir": "^6.0.0-18",
-    "laravel-elixir-gulp-v4-compat": "^6.0.0-19"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "leesa ruzicka",
-  "license": "ISC"
+    "name": "leesa",
+    "version": "1.0.0",
+    "description": "for zappitalstudio.com",
+    "main": "index.js",
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "laravel-elixir": "^6.0.0-18",
+        "laravel-elixir-gulp-v4-compat": "^6.0.0-19"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "leesa ruzicka",
+    "license": "ISC"
 }
