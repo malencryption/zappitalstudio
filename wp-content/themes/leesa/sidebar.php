@@ -10,7 +10,7 @@
 
     <div class="authorImage"><img src="http://zappitalstudio.com/wp-content/uploads/2020/03/leesa-ruzicka-profile-picture.png" alt="" class="size-medium wp-image-2048 alignnone mr-4"></div>
     
-    <p>Leesa graduated with both a Bachelor’s Degree in Web Design and Development and a cosmetology license. Her experience in business operations as well as web and software development, digital marketing, and graphic design comes from managing salons, running independant businesses doing contract and freelance work, teaching as a bootcamp instructor, developing independant projects, and over five years of professional experience as a software and web developer.</p>
+    <p>Leesa graduated with a Bachelor’s Degree in Web Design and Development from BYU Idaho. In addition to her degree, she got her cosmetology license and worked in salons, managing business operations, and marketing along with providing services. She worked professionally as a software and web developer for over five years. Beyond working for companies remotely and in office positions, she has done contract work, freelance work, and has now switched to focus on running her own business, teaching as a bootcamp instructor, and developing independant projects.</p>
     
     <div><a class="readMoreLink" href="/about-us">Read More >></a></div>
 

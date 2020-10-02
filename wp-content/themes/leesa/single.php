@@ -17,7 +17,20 @@ get_header(); ?>
 				<div class="sidebarLayoutContainer">
 					<div class="sidecontent">
 						<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
-						<div class="post-thumbnail"><?php echo get_the_post_thumbnail( $post_id, 'full' ); ?></div>
+						<?php if( get_field( 'video_link' ) ) {
+							$videoid = get_field( 'video_link' );
+							echo '<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="video-container wp-block-embed__wrapper">
+								<iframe class="video" title="' . get_the_title() . '" src="https://www.youtube.com/embed/' . $videoid . '?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+								</div></figure>';
+						} else {
+							if( has_post_thumbnail( get_the_ID() ) ) {
+								// show post thumbnail ?>
+								<div class="post-thumbnail"><?php echo get_the_post_thumbnail( $post_id, 'full' ); ?></div>
+							<?php }
+
+							//no video or photo
+						} ?>
+						
 						<div class="post-meta">
 							<span class="post-date"><?php echo get_the_date(); ?></span>
 							<span class="post-author"> by <?php the_author() ?></span>
