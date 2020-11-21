@@ -20,7 +20,59 @@ if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
                 <?php the_content(); ?>
                 <p>We're happy to help support you in growing your online business. Check out our services below!</p>
 
+                <h2></h2>
+
                 <div id="services">
+                <h2>Tech Services</h2>
+                    <div class="body">
+                        <div class="entry">
+                            <div class="greenBubble"><i class="material-icons white">important_devices</i></div>
+                            <div class="text">
+                                <h3>Web Site Development</h3>
+                                <p>
+                                    Optimize your online presence with a custom responsive web site,
+                                    portfolio, or blog for your business.
+                                </p>
+                                <p>Our web site packages are ideal for:</p>
+                                <ul>
+                                    <li>
+                                        Content creators, influencers, and brands focused on
+                                        publishing content
+                                    </li>
+                                    <li>
+                                        Video creators, vloggers, and live streamers
+                                    </li>
+                                    <li>Businesses doing online lead generation</li>
+                                    <li>Service providers</li>
+                                    <li>Digital Product Based Businesses</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn btn-teal btn-icon" href="/web-development-packages">View Our Web Site Packages <i class="material-icons right">chevron_right</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="greenBubble"><i class="material-icons white">code</i></div>
+                            <div class="text">
+                                <h3>Custom Development</h3>
+                                <p>Whether you are starting with an idea or an existing project, we are happy to offer custom development work. We can develop custom applications, WordPress themes and plugins, membership and course platforms, and storefronts, or customize what you already have to meet your needs.</p>
+                                
+                                <ul>
+                                    <li>Web Applications</li>
+                                    <li>WordPress Themes & Plugins</li>
+                                    <li>Membership and Course Platforms</li>
+                                    <li>Storefronts</li>
+                                    <li>Upgrade your existing projects</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn btn-teal btn-icon" href="/contact-us">Contact Us For Rates <i class="material-icons right">chevron_right</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <h2>Tech Services</h2>
                     <div class="body">
                         <div class="entry">

@@ -402,6 +402,69 @@ h3.bordered::after {
   border: 0;
 }
 
+.cml_partner_marketing_form h4,
+.cml_partner_marketing_form .h4 {
+  text-transform: none;
+  border-bottom: none;
+}
+
+#digital-report-card-banner .cml_partner_marketing_form .btn-primary {
+  height: auto;
+  background-color: #00c180;
+}
+
+ul#serviceItems {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.service-item {
+  border: 1px solid #e5e8ec;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  width: calc(100% / 6 - 20px);
+  transition: all 0.4s ease;
+  border-radius: 2px;
+}
+
+.service-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.service-item:hover {
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(3, 27, 78, 0.08);
+}
+
+.service-item i.material-icons {
+  color: #00c180;
+}
+
+#digital-report-card-banner {
+  background: #00c180;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #00c180 50%, #020024 100%);
+  padding: 30px 0;
+}
+
+#digital-report-card-banner h2 {
+  text-align: center;
+  color: white;
+  margin: 40px 0;
+}
+
+#digital-report-card-banner h2::after {
+  display: none;
+}
+
 .postPreviewContainer {
   margin: 40px 0 0;
   display: flex;
