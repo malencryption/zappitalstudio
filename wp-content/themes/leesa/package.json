@@ -4,13 +4,11 @@
     "description": "for zappitalstudio.com",
     "main": "index.js",
     "dependencies": {
-        "gulp": "^3.9.1",
-        "laravel-elixir": "^6.0.0-18",
-        "laravel-elixir-gulp-v4-compat": "^6.0.0-19"
+        "node-sass": "^5.0.0"
     },
-    "devDependencies": {},
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass --source-map true css -o public/css/"
     },
     "author": "leesa ruzicka",
     "license": "ISC"
